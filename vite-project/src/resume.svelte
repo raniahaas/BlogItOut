@@ -138,8 +138,8 @@
       {lang === 'ENG' ? 'Member and Volunteer' : '2024年5月〜2024年8月'}
     </p>
     <ul>
-      <li>{lang === 'ENG' ? 'Promoting conversations across the spectrum as well as educating young College Americans on current affairs and the Word of the Lord.' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
-      <li>{lang === 'ENG' ? 'Helping lead and organise events to protect high-level political figures as well as inform the community of such events. Fortunate to be able to host Vivek Ramaswamy and Riley Gaines. ' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
+      <li>{lang === 'ENG' ? 'Promoting conversations across the spectrum as well as educating young College Americans on current affairs and the Word of the Lord' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
+      <li>{lang === 'ENG' ? 'Helping lead and organise events to protect high-level political figures as well as inform the community of such events. Fortunate to be able to host Vivek Ramaswamy and Riley Gaines ' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
     </ul>
   </div>
 
@@ -157,7 +157,7 @@
     </p>
     <ul>
       <li>{lang === 'ENG' ? 'Performed and rehered throughout the school year to perform with a professional sound rivaling many of the starting Orchestras in the Conservatory of Music at the University of Cincinnati' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
-      <li>{lang === 'ENG' ? "Enforced strict discipline to keep up a high level of study as well as performing and practicing professional-level pieces such as Rossini's Barber of Seville, Bizet Carmen, and Rachmaninoff's Piano Concerto No. 2." : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
+      <li>{lang === 'ENG' ? "Enforced strict discipline to keep up a high level of study as well as performing and practicing professional-level pieces such as Rossini's Barber of Seville, Bizet Carmen, and Rachmaninoff's Piano Concerto No. 2" : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
     </ul>
   </div>
 </section>
@@ -232,7 +232,7 @@
         : 'Web開発 — Svelte/Tailwindを用いたレスポンシブアプリケーション'}
     </h3>
     <p class="date">
-      {lang === 'ENG' ? 'Jan 2025 – Present' : '2025年1月〜現在'}
+      {lang === 'ENG' ? 'Jan 2022 – May 2022 ' : '2025年1月〜現在'}
     </p>
     <ul>
       <li>{lang === 'ENG' ? 'Built a custom L2 rocket with avionics bay to launch over Lake Michigan to read the sublimation rate of Dry Ice as the rocekt reaches apogee' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>

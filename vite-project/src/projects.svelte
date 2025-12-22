@@ -3,9 +3,6 @@
   import CodePanel from './codePannel.svelte';
   export let navigate = (p) => (location.pathname = p);
 
-  /* -------------------------
-     Project images (import your assets)
-     ------------------------- */
   import thumb1 from './assets/hartydarty/IMG_2250.jpeg';
   import img1a from './assets/hartydarty/DSC06724.jpg';
   import img1b from './assets/hartydarty/DSC06780.jpg';
@@ -34,6 +31,8 @@
   import img4f from './assets/ui/quiz.png';
   import img4g from './assets/ui/schedule.png';
   import img4h from './assets/ui/wardrobe.png';
+  import img4i from './assets/ui/article.png';
+  import img4j from './assets/ui/closegap.png';
 
   // add more imports as needed
 
@@ -66,6 +65,7 @@
       ],
       links: [
         { label: "GitHub repo", href: "https://github.com/raniamaaraba/HardyDarty", external: true },
+        { label: "YouTube", href: "https://www.youtube.com/watch?v=EhZOaHPUpec", external: true}
       ],
       thumb: thumb1,
       images: [ img1g, img1a, img1b, thumb1, img1c, img1d, img1e, img1f, img1h],
@@ -123,21 +123,24 @@
       id: 4,
       title: "User Interfaces",
       role: "Full Stack Developer",
-      date: "Sept 2025 – December",
+      date: "Sept 2025 – December 2025",
       tags: ["Web Development", "Svelte", "Design"],
       tech: ["Svelte", "Tailwind", "NPM Packages", "Git Pages"],
-      preview: "A comprehensive website to showcase projects, full resume, and humility of programming",
+      preview: "Projects I have developed in the Unversitys' User Interfaces Course",
       content: [
-        "This site is my personal portfolio — a space where design meets engineering. One of my greatest life-long passions outside of engineering that plays a major role in my life is my time spent in the Japanese language and wanted a place to showcase and use these skills! Developing a bilingual portfolio site to have a more indepth area to showcase and explain my current projects seemd perfect! Goal was to make an interactive website using Svelte to integrate a resume as well as characteristics of myself into one website.",
-        "I focused a lot on a responsive layout, both the Japanese and English content, and a small, fast bundle. This website is more than a portfolio--it’s a living notebook of experiments, iterations, and milestones. It reflects how I approach design and development: methodical, imaginative, and always evolving! "
+       "Over the Fall Semester of 2025, I was able to take a user interfaces course under Dr. Jillian Aurisano, looking into truly good and bad user interfaces, how they may effect the user's experience, and common mistakes. We were given four projects to develop of over the semester: a journal, a 'smart' interface, fix a bad interface, and finally create something to help solve a world problem.",
+       "First, we created a journal. This was right after we did a little bit of practice in Svelte and I created Chopin Chronicle. The goal of Chopin Chronicle was to have an interactive enviornment for a user to log their current classical music obsessions. One of the best parts of this course was truly making things that I felt mattered to me. I wanted to create an enviornment where the user could log (and encourage going to) concerts and performances as well as see upcoming concerts in the area. The user is also reccomended pieces based on their entires--each day the user can make a journal entry about the performance they attended and report about the type such as Baroque or Romantic era. Since this was my first true project, there are still a lot of room for improvemnts. Currently, the music reccomendations are truly not dynamic and would also want to embedd YouTube and Spotify playlists. Instead of having one scrolling screen, I think it would be great to make multiple tabs. Truly, however it was a great start!",
+       "Next, instead of a solo project we did a group project to create an interface if an object of our choice was electronic. A good example is the watch from Spy Kids, a watch with a useable user interface. Alongside Meredith Bartel, we developed a UI system as if there was an electric pannel next to a closet, creating an app similar to that of the computer used in the movie Clueless. Meredith and I created an interface where you could not only try on outfits for yourself, but as well as add new users and created a calculation based on their seasonal colors (as if you were to get your colors done) in a quick quiz. The greatest hinderance of this app (other than the fact there is no smart closet like this yet) is how to user visualises themselves in the different clothes options. Between Meredith and myself there is about a four inch height difference that clearly translates into the app. We would have to develop a better implementation of the user and sizing the clothes to fit the user better based on their height. Another feature we would have liked to add that we did not get to was shoes and other accessories. Truly no outfit is complete without them!",
+       "Third, once again with Meredith we worked to fix a bad user interface. There are tons of low-budget or poorly execute apps and websites, but the best always hit close to home--hence our choice of picking the Univeristy of Cincinnati's Landing page for current and future students. I truly go a lot more indepth on the Github repo (if you would like to take a read) on the errors of this website, but one of the biggest issues is the website is very much so set up to be tailored to each student but that wasn't implemented ever. As well as lots of redundancy and missing pieces of critical information. Out of all the four projects I was able to work on this semester, this one truly turned out the best. Although there are a few missing features (only due to how the UC system is set up with linking to external pages when you need to be signed in), this project is the closest to it's polished form currently and could truly make a large difference.",
+       "Finally, this was another solo project where we were tasked with picking any issue in the World, wheter it be hunger, United States legal system, anything we truly thought was flawed in our society. One thing that struck me the most that I ended up focusing on was Medicine and Faith--two things I believe my gernation is indifferent about (as in Gen Z is very atheist generation and has been on lots of medication with several diagoisis being common). I created Closing the Gap, focusing on Gen Z's conditions as well as connecting them to the Bibical view of common plaguing conditions. This was more of a love child in the articlces that I wrote over the UI implementation--but I truly wanted to be able to deliever a work that I felt was accurate information wise. It goes through herbal medicines as well as their uses to show the user there are alternatives to the hard medications given to you by Big Pharma to keep you on drugs for the rest of your life. Majority of the changes I would like to make is small things with coloring, sometimes inconsistent, as well as image sizing that sometimes gets a little funny when actually impelmented.",
+       ""
       ],
       bullets: [
-        "Created website from scratch using Svelte and Vite",
-        "Implemented a projects feed with thumbnails and focused views",
-        "Built a language toggle button with persisted preference.",
-        "Learned more about embedding of media: images, video, and code",
-        "Truly grasping a better understanding of user-usability and creative elements",
-        "Iterative refinement of testing, debugging, and polishing small details until both design and code feel seamless"
+        "Created websites from scratch using Svelte and Vite",
+        "Learned how to create a user-centred application",
+        "Interation design",
+        "Sketching and implementation",
+        "Visual consistencies"
       ],
       links: [
         { label: "Chopin Chronicle Deployment", href: "https://chopinchronicle.netlify.app/", external: true },
@@ -146,20 +149,19 @@
         { label: "Mr Wardrobe GitHub Repo", href: "https://github.com/raniamaaraba/MrWardrobe", external: true},
         { label: "Bearcat Landing Re-Design Deployment", href: "https://bearcatlanding.netlify.app/", external: true },
         { label: "Bearcat Landing GitHub Repo", href: "https://github.com/raniamaaraba/BearcatLanding", external: true},
+        { label: "Closing the Gap GitHub Repo", href: "https://github.com/raniamaaraba/closingTheGap", external: true},
+        { label: "Closing the Gap Deployment", href: "https://closingthegap.netlify.app/articles#ocd", external: true},
         
 
       ], 
       thumb: thumb4,
-      images: [img4b, img4a, img4c, img4d, img4e, img4f, img4h, img4g]
+      images: [img4b, img4a, img4c, img4d, img4e, img4f, img4h, img4g, img4i, img4j]
     },
 
 
 
   ];
 
-  /* -------------------------
-     UI state
-     ------------------------- */
   let expanded = null; // id of open project
   $: selected = projects.find(p => p.id === expanded) || null;
 
@@ -212,7 +214,7 @@
 </script>
 
 <main class="container">
-  <!-- Header (keeps your original fonts and nav layout) -->
+  <!-- Header-->
   <header class="projects-header">
     <div class="header-bar">
       <h1 class="title">Projects</h1>
@@ -338,7 +340,6 @@
 </main>
 
 <style>
-  /* --- NAV & HEADER: keep your original layout and fonts unchanged --- */
   .header-bar {
     display: flex;
     justify-content: space-between;
@@ -375,7 +376,6 @@
     text-decoration: underline;
   }
 
-  /* --- Projects list & focused view (inherits your fonts) --- */
   .projects { margin-top: 1.5rem; }
 
   .section-title { margin: 0 0 0.75rem 0; color: #0b2545; }
@@ -429,7 +429,6 @@
   .role { font-weight:600; color:#234; }
   .date { color:#567; }
 
-  /* Focused project */
   .project-focus { margin-top:1rem; padding:1rem; background:#fff; border-radius:8px; border:1px solid #e6e6e6; }
   .focus-controls { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:0.75rem; }
   .back-btn { background:none; border:2px solid #567; color:#567; padding:0.4rem 0.8rem; border-radius:6px; cursor:pointer; font-weight:600; }
@@ -450,7 +449,6 @@
 
   .tech { color:#334155; font-size:0.95rem; margin-top:0.5rem; }
 
-  /* Gallery */
   .gallery { width:320px; max-width:40%; min-width:220px; display:flex; flex-direction:column; gap:0.5rem; }
   .main-image-wrap { background:#f7f7f7; border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center; height:200px; }
   .main-image { width:100%; height:100%; object-fit:cover; display:block; }
