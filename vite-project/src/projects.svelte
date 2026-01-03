@@ -18,6 +18,7 @@
   import img2c from './assets/l2/IMG_1875.jpeg';
   import img2d from './assets/l2/openrocket.png';
   import img2e from './assets/l2/IMG_1789.jpeg';
+  import img2f from './assets/l2/DSCF1001.jpg';
 
   import thumb3 from './assets/r.jpeg';
   import img3a from './assets/IMG_2259.jpeg';
@@ -34,11 +35,7 @@
   import img4i from './assets/ui/article.png';
   import img4j from './assets/ui/closegap.png';
 
-  // add more imports as needed
 
-  /* -------------------------
-     Project data (rich fields)
-     ------------------------- */
   let projects = [
     {
       id: 1,
@@ -92,7 +89,7 @@
         "Grasping a larger understanding of better saftey protocols"
       ],
       thumb: img2c,
-      images: [img2d, img2a, img2b, img2c, img2e],
+      images: [img2d, img2f, img2a, img2b, img2c, img2e],
     },
 
     {
