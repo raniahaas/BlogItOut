@@ -8,7 +8,6 @@
   import img1b from './assets/hartydarty/DSC06780.jpg';
   import img1c from './assets/hartydarty/DSC06782.jpg';
   import img1d from './assets/hartydarty/DSC06786.jpg';
-  import img1e from './assets/hartydarty/DSC06786.jpg';
   import img1f from './assets/hartydarty/DSC06795.jpg';
   import img1g from './assets/hartydarty/DSC06829.jpg';
   import img1h from './assets/hartydarty/IMG_2183.jpeg';
@@ -65,7 +64,7 @@
         { label: "YouTube", href: "https://www.youtube.com/watch?v=EhZOaHPUpec", external: true}
       ],
       thumb: thumb1,
-      images: [ img1g, img1a, img1b, thumb1, img1c, img1d, img1e, img1f, img1h],
+      images: [ img1g, img1b, thumb1, img1c, img1d, img1f, img1h],
     },
 
     {

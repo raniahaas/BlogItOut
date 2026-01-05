@@ -16,7 +16,7 @@
       </button>
     </div>
     <div class="resume-download">
-      <a href="/assets/Maaraba_Rania_Resume_2025_12.pdf" download>
+      <a href="/public/Maaraba_Rania_Resume_2025_12.pdf" download>
         {lang === 'ENG' ? '↓ Download Most Recent Resume' : '↓ 履歴書をダウンロード'}
       </a>
     </div>
