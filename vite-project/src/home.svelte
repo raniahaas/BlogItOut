@@ -19,7 +19,7 @@
         <a href="/resume" on:click|preventDefault={() => navigate('/resume')}>Resume</a>
       </nav>
     </div>
-    <p class="subtitle">Avioncs, Japanese, and more in-depth parts of my professional career!</p>
+    <p class="subtitle">Avionics, Japanese, and more in-depth parts of my professional career!</p>
 
      <h1 class="title"></h1>
       <p class="subtitle"> </p>
