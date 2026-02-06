@@ -38,7 +38,7 @@
   let projects = [
     {
       id: 1,
-      title: "Avionics Flight System",
+      title: "Boosted Dart Avionics Flight System",
       role: "Avionics Team Member - Developer",
       date: "Sept 2025 – Dec 2025",
       tags: ["Aerospace", "Embedded Systems", "C++", "Avionics", "Rocketry"],
@@ -154,6 +154,27 @@
       images: [img4b, img4a, img4c, img4d, img4e, img4f, img4h, img4g, img4i, img4j]
     },
 
+    {
+      id: 2,
+      title: "Two Stage Avionics Flight System", 
+      role: "Avionics and PCB Design",
+      date: "January 2026 - Present",
+      tags: ["Rocketry", "Avionics","Hardware"],
+      tech: ["VSC with PlatformIO", "C++", "KiCAD"],
+      preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
+      content: [
+        "WIP! We are very early on in development check back in the coming months for more updates!!",
+      ],
+      bullets: [
+        "",
+      ],
+      links: [
+        { label: "Current GitHub Repo", href: "https://github.com/raniamaaraba/TwoStageAvionicsBay", external: true },
+      ], 
+      thumb: [],
+      images: [],
+    },
+    
 
 
   ];

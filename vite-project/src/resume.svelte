@@ -16,7 +16,7 @@
       </button>
     </div>
     <div class="resume-download">
-      <a href="/public/Maaraba_Rania_Resume_2025_12.pdf" download>
+      <a href="public/Maaraba_Rania_Resume_2026_Feb.pdf" download>
         {lang === 'ENG' ? '↓ Download Most Recent Resume' : '↓ 履歴書をダウンロード'}
       </a>
     </div>
@@ -117,29 +117,12 @@
       {lang === 'ENG' ? 'June 2025 – Present' : '2024年5月〜2024年8月'}
     </p>
     <p class="postions">
-      {lang === 'ENG' ? 'Boosted Dart Avionics Coder | 2025 Mentorship Program Mentee' : '2024年5月〜2024年8月'}
+      {lang === 'ENG' ? 'Boosted Dart Avionics Coder | 2025 Mentorship Program Mentee | Two Stage Rocket Avionics Coder' : '2024年5月〜2024年8月'}
     </p>
     <ul>
-      <li>{lang === 'ENG' ? 'Developed embedded C++ modules for flight control fitted for a boosted dart on a collaberative level. Created code for projects that require dual deployment systems as well as experiments to run within the launch window' : 'フライト制御用の組込みC++モジュールを開発。'}</li>
+      <li>{lang === 'ENG' ? 'Developed embedded C++ modules for flight control fitted for a boosted dart and dual stage rocket on a collaberative level. Created code for projects that require redundant dual deployment systems alongside experiments within the launch window' : 'フライト制御用の組込みC++モジュールを開発。'}</li>
       <li>{lang === 'ENG' ? "Selected as a mentee to develop my NAR L2 certifiable rocket under the current club's President who is in addition Level 2 Certified. Developing several skills from intial structures and development of the rocket to 3D modeling skills with Fusion360" : '航空宇宙エンジニアと安全システムで協力。'}</li>
-    </ul>
-  </div>
-
-  <div class="resume-item">
-    <h3>
-      {lang === 'ENG'
-        ? 'Turning Point USA University of Cincinnati'
-        : 'Web開発 — Svelte/Tailwindを用いたレスポンシブアプリケーション'}
-    </h3>
-    <p class="date">
-      {lang === 'ENG' ? 'Sept 2025 – Present' : '2025年1月〜現在'}
-    </p>
-    <p class="postions">
-      {lang === 'ENG' ? 'Member and Volunteer' : '2024年5月〜2024年8月'}
-    </p>
-    <ul>
-      <li>{lang === 'ENG' ? 'Promoting conversations across the spectrum as well as educating young College Americans on current affairs and the Word of the Lord' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
-      <li>{lang === 'ENG' ? 'Helping lead and organise events to protect high-level political figures as well as inform the community of such events. Fortunate to be able to host Vivek Ramaswamy and Riley Gaines ' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
+      <li>{lang === 'ENG' ? "Worked on development of printed circuit boards for easier integration with the custom avoinic's bay" : ""}</li>
     </ul>
   </div>
 
@@ -183,21 +166,6 @@
   <div class="resume-item">
     <h3>
       {lang === 'ENG'
-        ? 'Radiji - Local Japanese Kanji Dictonary App'
-        : 'Web開発 — Svelte/Tailwindを用いたレスポンシブアプリケーション'}
-    </h3>
-    <p class="date">
-      {lang === 'ENG' ? 'June 2024 – Present' : '2025年1月〜現在'}
-    </p>
-    <ul>
-      <li>{lang === 'ENG' ? 'Local app designed to allow users to be able to easily access and learn new Kanji on the go' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
-      <li>{lang === 'ENG' ? 'Developing in JavaScript with React and Postgres with backend integration' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
-    </ul>
-  </div>
-
-  <div class="resume-item">
-    <h3>
-      {lang === 'ENG'
         ? "Univeristy of Cincinnati Rocketry — Boosted Dart Avionics Development"
         : '航空宇宙システムプロジェクト — フライト制御ソフトウェア開発'}
     </h3>
@@ -222,6 +190,21 @@
     <ul>
       <li>{lang === 'ENG' ? 'Developed several user interface projects with Svelte' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
       <li>{lang === 'ENG' ? 'Created projects allowing users to journal, pick out outfits based on compatibility, re-designed a Univeristy of Cincinnati page, as well as created an interface to help users learn alternative medicines' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
+    </ul>
+  </div>
+
+  <div class="resume-item">
+    <h3>
+      {lang === 'ENG'
+        ? 'Radiji - Local Japanese Kanji Dictonary App'
+        : 'Web開発 — Svelte/Tailwindを用いたレスポンシブアプリケーション'}
+    </h3>
+    <p class="date">
+      {lang === 'ENG' ? 'June 2024 – December 2024' : '2025年1月〜現在'}
+    </p>
+    <ul>
+      <li>{lang === 'ENG' ? 'Local app designed to allow users to be able to easily access and learn new Kanji on the go' : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
+      <li>{lang === 'ENG' ? 'Developed in JavaScript with React and Postgres with backend integration' : 'TailwindCSSでブランド化されたレイアウトを設計。'}</li>
     </ul>
   </div>
 
