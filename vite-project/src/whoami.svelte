@@ -35,21 +35,21 @@
         : 'シンシナティ大学 の 工学部・応用科学部 2027年卒業予定'}
     </p>
 
-    <img class="profile-wrap" src={img} alt="Rania Maaraba" />
+    <img class="profile-wrap" src={img} alt="Rania Haas" />
   </header>
 
   <!-- Bio -->
   <section class="bio">
     {#if lang === 'ENG'}
       <p>
-        Hiya my name is Rania Maaraba and I am a current Junior at the University of Cincinnati studying Computer Science with a minor in Japanese! I have a passion for aerospace engineering and software development, and I love combining these interests to create innovative solutions.
+        Hiya my name is Rania Haas and I am a current Junior at the University of Cincinnati studying Computer Science with a minor in Japanese! I have a passion for aerospace engineering and software development, and I love combining these interests to create innovative solutions.
       </p>
       <p>
         Other than trying to grow as a professional, I love to read and study new languages (both programming and spoken). I'm currently honing my C++ skills and improving my Japanese after getting N4 certified in January of 2025.
       </p>
     {:else}
       <p>
-        ヤホ！レンヤ・マーラバと申します。シンシナティ大学でコンピュータ科学を勉強し、副専攻。今年、あたしが３年生です。降雨空中とかソフトウェアとか本当に大好きです！プロジェクトを作る時、あたしの大好き物を考えてそうして革新的な解決策を作っていきます。
+        ヤホ！レンヤ・ハースと申します。シンシナティ大学でコンピュータ科学を勉強し、副専攻。今年、あたしが３年生です。降雨空中とかソフトウェアとか本当に大好きです！プロジェクトを作る時、あたしの大好き物を考えてそうして革新的な解決策を作っていきます。
       </p>
       <p>
         暇があったら、たくさん本を読めるとか、新しい言語（プログラミング言語とか話す言語とか）を勉強したりします。今、C++と日本語を勉強を続けています。２０２５の１月に日本語能力試験のN4を受けました。まだ、N3~N1を続けたいです！
@@ -81,7 +81,7 @@
       </a>
 
       <!-- GitHub -->
-      <a href="https://github.com/raniamaaraba" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/raniahaas" target="_blank" aria-label="GitHub">
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.93.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.54-3.87-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.57.23 2.73.11 3.02.75.81 1.2 1.85 1.2 3.11 0 4.43-2.7 5.4-5.27 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A10.5 10.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z" />
         </svg>

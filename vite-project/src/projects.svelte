@@ -60,7 +60,7 @@
         "Applied physics concepts learned in the classroom consisting of converting raw sensor data into g‑forces, angular velocity, and altitude using barometric formulas"
       ],
       links: [
-        { label: "GitHub repo", href: "https://github.com/raniamaaraba/HardyDarty", external: true },
+        { label: "GitHub repo", href: "https://github.com/raniahaas/HardyDarty", external: true },
         { label: "YouTube", href: "https://www.youtube.com/watch?v=EhZOaHPUpec", external: true}
       ],
       thumb: thumb1,
@@ -140,12 +140,12 @@
       ],
       links: [
         { label: "Chopin Chronicle Deployment", href: "https://chopinchronicle.netlify.app/", external: true },
-        { label: "Chopin Chronicle GitHub Repo", href: "https://github.com/raniamaaraba/chopinChronicle", external: true},
+        { label: "Chopin Chronicle GitHub Repo", href: "https://github.com/raniahaas/chopinChronicle", external: true},
         { label: "Mr Wardobe Deployment ", href: "https://mrwardrobecloset.netlify.app//", external: true },
-        { label: "Mr Wardrobe GitHub Repo", href: "https://github.com/raniamaaraba/MrWardrobe", external: true},
+        { label: "Mr Wardrobe GitHub Repo", href: "https://github.com/raniahaas/MrWardrobe", external: true},
         { label: "Bearcat Landing Re-Design Deployment", href: "https://bearcatlanding.netlify.app/", external: true },
-        { label: "Bearcat Landing GitHub Repo", href: "https://github.com/raniamaaraba/BearcatLanding", external: true},
-        { label: "Closing the Gap GitHub Repo", href: "https://github.com/raniamaaraba/closingTheGap", external: true},
+        { label: "Bearcat Landing GitHub Repo", href: "https://github.com/raniahaas/BearcatLanding", external: true},
+        { label: "Closing the Gap GitHub Repo", href: "https://github.com/raniahaas/closingTheGap", external: true},
         { label: "Closing the Gap Deployment", href: "https://closingthegap.netlify.app/articles#ocd", external: true},
         
 
@@ -169,7 +169,7 @@
         "",
       ],
       links: [
-        { label: "Current GitHub Repo", href: "https://github.com/raniamaaraba/TwoStageAvionicsBay", external: true },
+        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/TwoStageAvionicsBay", external: true },
       ], 
       thumb: [],
       images: [],

@@ -11,7 +11,7 @@
   <!-- Header bar (unchanged) -->
   <header class="home-header">
     <div class="header-bar">
-      <h1 class="title">Rania Maaraba</h1>
+      <h1 class="title">Rania Haas</h1>
       <nav class="nav">
         <a href="/" on:click|preventDefault={() => navigate('/')}>Home</a>
         <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
@@ -29,7 +29,7 @@
   <section class="scrapbook">
     <!-- Polaroid photo -->
     <div class="polaroid">
-      <img src={img} alt="Rania Maaraba" />
+      <img src={img} alt="Rania Haas" />
       <p class="caption">Graduating Class of 2027 with B.S. in Computer Science and Certificate in Japanese Language and Culture from the University of Cincinnati</p>
     </div>
 
