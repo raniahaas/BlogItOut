@@ -15,6 +15,13 @@
   window.addEventListener('popstate', () => {
     route = location.pathname;
   });
+  /**notes for updating build:
+   * 1. npm run dev in vite-project and ensure it works
+   * if it doesnt re-install npm
+   * 2. npm run build
+   * 3. npm run deploy
+   * */
+
 </script>
 
 {#if route === '/'}
@@ -28,3 +35,5 @@
 {:else}
   <Home {navigate} />
 {/if}
+
+
