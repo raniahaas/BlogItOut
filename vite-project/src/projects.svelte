@@ -3,6 +3,7 @@
   import CodePanel from './codePannel.svelte';
   export let navigate = (p) => (location.pathname = p);
 
+  //HD imports
   import thumb1 from './assets/hartydarty/IMG_2250.jpeg';
   import img1a from './assets/hartydarty/DSC06724.jpg';
   import img1b from './assets/hartydarty/DSC06780.jpg';
@@ -11,17 +12,27 @@
   import img1f from './assets/hartydarty/DSC06795.jpg';
   import img1g from './assets/hartydarty/DSC06829.jpg';
   import img1h from './assets/hartydarty/IMG_2183.jpeg';
+  import img1j from './assets/hartydarty/IMG_2528.jpg';
 
+
+  //L2 Imports
   import img2a from './assets/l2/cad.png';
   import img2b from './assets/l2/fails.jpg';
   import img2c from './assets/l2/IMG_1875.jpeg';
   import img2d from './assets/l2/openrocket.png';
   import img2e from './assets/l2/IMG_1789.jpeg';
   import img2f from './assets/l2/DSCF1001.jpg';
+  import img2g from './assets/l2/IMG_3540.jpeg';
+  import img2h from './assets/l2/IMG_3542.jpeg';
+  import img2i from './assets/l2/IMG_3546.jpeg';
+  import img2j from './assets/l2/IMG_4355.JPG';
 
+  //Website imports
   import thumb3 from './assets/r.jpeg';
   import img3a from './assets/IMG_2259.jpeg';
+  import img3b from './assets/IMG_3456.jpeg';
 
+  //UI dev imports
   import thumb4 from './assets/ui/IMG_0563.jpeg';
   import img4a from './assets/ui/cal.png';
   import img4b from './assets/ui/chopin.png';
@@ -34,18 +45,74 @@
   import img4i from './assets/ui/article.png';
   import img4j from './assets/ui/closegap.png';
 
+  //double or nothing imports
+  import thumb5 from './assets/doubleOrNothing/IMG_4894.jpg';
+  import img5a from './assets/doubleOrNothing/20260411_205010000_iOS 1.jpg';
+  import img5b from './assets/doubleOrNothing/1000003021.jpg';
+  import img5c from './assets/doubleOrNothing/DSC07361.jpg';
+  import img5d from './assets/doubleOrNothing/DSC07417.jpg';
+  import img5e from './assets/doubleOrNothing/DSC07468.jpg';
+  import img5f from './assets/doubleOrNothing/DSC07490.jpg';
+  import img5g from './assets/doubleOrNothing/IMG_1667.jpeg';
+  import img5h from './assets/doubleOrNothing/IMG_1726.jpg';
+  import img5i from './assets/doubleOrNothing/PXL_20260411_192521324.jpg';
+
 
   let projects = [
     {
       id: 1,
+      title: "Two Stage Avionics Flight System", 
+      role: "Avionics Team Member - Customs Developer",
+      date: "January 2026 - April 2026",
+      tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++"],
+      tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers",],
+      preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
+      content: [
+        "Following up on the Fall semester's Harty Darty, Double or Nothing was born as the next natural progression for the club, becoming the first two stage rocket in both UC history as wel as the club's. Goals for the project can be simplifed into three categories: generalised, structures, and avionics. Generally, the overall goal was to stay within our given flight waiver at WSR of 10,000ft but no less than 8,000ft. Additionally, it was a heavy priority to have both stages recoverable within a mile raidus of launch. This is a good rule of thumb to begin with, but with the inner stage of Harty Darty not being recoverable for about a month, it was an even higher priority item this time. For structures, the goals was to efficienty optimize a two stage rocket, continue to build a Mach 1 capable rocket, and improve simulation techniques. For avionics, the goals encompassed ignition of a second stage as well as recovery in terms of custom components.",
+        "Similar to Harty Darty, Avionics is once again running off of a custom electronics bay as well as off the shelf compoents, both being near identical to the previous semester's project. One of the larger changes we added this semester was PCB design to decrease latency as well as set the club up with the skills accredidted to a space launch later down the line. On the PCB, we still used our ESP32-S3 microcontroller, MS5611 barometer, and LSM6DSO32 IMU. With the nature of the project, we used C++ and PlatformIO to be able to integrate and flash the information as an alternative to the ArudinoIDE. The goal was to maximise the flash memory, using about half of the volatile memory for logging and determining event sequences. Primarily, the largest being from high speed data coming from the IMU. It is important to note here that we are using customs as a development feature to later connect to pyrotechniques, given myself and the few others working on customs completely dependent code was not in the cards this semester.",
+        "Working off of the code from the previous semester, I had set out a few goals for moving forward with the project: clean up the code and create more intuitive functions, create better logging techniques for data retrival, add more staging events and faux events to replace what would be pyrotechniques. Before any of these goals could be addressed--there was a larger issue at hand. After retriving information from last semester and with simulations ran on the custom code, the setup of the microcontroller wihtout any multi-threading made it impossible to both log information from the barometer or accelerometer as well as have event logging. Often when testing, all of the values would be recorded but when the computer determined it 'landed' the functions would then go through and record the event sequence with inacurrate data points and times. To comabt this, we used freeROTS to create some multithreaded code to have one core constantly log information and the other detect and determine event sequences. This became the hardest part of our integration, which often required re-writing the entire logic for all of our functions to work with the multithreading techniques.",
+        "Not knowing the scale of multithreading and the overall complexity ended up being one of the greatest weak points of the code this semester, although the logic was there actual implementation and testing became quite difficult once we realised the scale. Before launch day, the multi-threading was sucessfully in place but we were still lacking in many features, notably only truly flying with apogee detection, launch and staging detection, and landing which was less than we had originall bargined for. However, the large learning curve that came with multi-threading ended up being quite the large step in the customs code development, setting a the club off on a good base for the next project. Considering my goals, I was able to help contribute to cleaning up the code as well as teaching more members the innerworking of the code, but still left many quetsions unaswered for the next project.",
+        "One of the most important things I can take away from this project this semester is truly planning around the unknown. Without knowing the scale of issues that came with multithreading and only two programmers working on this difficult aspect, priorites for the final demostration become a lot larger. Truly marking out in the beginning what is critical and must be done no matter the issues we run into is something I plan to use going forward with development of my own custom flight computer. Additionally, how important it is to be able to write clear and consice code for many to understand when I am long gone. I would often create headers at the top of files with dates, initials, and modifications made which helps along side git to determine who is working on which functions, why, and what modifications were changed from previous versions. I found this truly critical when integrating others code into our multi-threaded versions. On a similar note as well, how important it is to explain concepts to new coders. Being the only computer science major within the project and working on the code, the exposure of higher level programming concepts was a large gap between myself and the other aerospace majors. Creating code in a way that is very digestable and simple to understand in a coding perspective and more in a physics perspective is something I plan to focus on when writing more code.",
+        "This project truly was such a fun endevour, but also pushed me outside of my comfort zone working more hands on with the development and the embedded system aspect of the project. For our method of lighting the second stage being very experimental, seeing the whole project work sucessfully is a feeling truly unmatched. For our final stats of the first stage: Apogee of 3,539.71ft with a total time of 14.4 seconds, max velocityof 612ft/s (0.55 mach), motor burnout of 1.3 seconds at a tilt of 11.2º, main parachute deployment at 689 feet decescending at 37.6 ft/s. Overall second stage stats: apogee of 10,116.75 ft encapsulating 25.4s, max velocity of 1046.0ft/s (0.93 mach), 2.2 second delay between stages, 5.27 s second motor burn out at a tilt of 14.2º, drogue descent at 58ft/s. ",
+        "More information regarding indepth images, sketches, mathematics, and structures can be found attached to the GitHub repository. Huge shout outs to our leads this semester for truly creating and cementing their names in history, Project Manager Jesse Dominguez, Structures lead Caleb Leech, and Avionics Lead Loring Teuteberg"
+      ],
+      bullets: [
+        "Developed new multithreading techniques and usage",
+        "Used Euclidean norm for calcuating apogee",
+        "Created test cases, systems for data management, and instructions for conceptual functions",
+        "Continued work on sensor integration in real time",
+        "Developed a new real-time server with the ESP to retrieve CSV data",
+        "Learned more critical functions regarding model rocketry and integration of a custom flight computer with pyrotehcniques"
+      ],
+      links: [
+        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/DoubleOrNothing", external: true },
+      ], 
+      thumb: [thumb5],
+      images: [img5a, img5b, img5c, img5d, img5e, img5f, img5g, img5h, thumb5, img5i],
+      captions: [
+        "Full Double or Nothing team, for the spring semester, launched on April 11th, 2026.",
+        "Double or Nothing sitting on the pad, ready for flight!",
+        "Testing simulations and continuity on the Blue Raven and Blue Jay altimeter.",
+        "Avionics Lead, Loring Teuteberg, preparing the electronics bay.",
+        "Loring preparing black powder pellets to ignite the second stage motor.",
+        "Team Lead, Jesse Dominguez, and Loring creating the second stage motor, a H-130.",
+        "Posing with the rocket post flight!!",
+        "Congrats and high fives all around for making UC history! Within the Rocketry Club and campus, first Two-Stage rocket launched!",
+        "Similes all around for a sucessfully recovered second stage!",
+        "Final preparations before heading to the launch pad with sucessfully created motors."
+      ]
+    },
+  
+  {
+      id: 2,
       title: "Boosted Dart Avionics Flight System",
-      role: "Avionics Team Member - Developer",
+      role: "Avionics Team Member - Customs Developer",
       date: "Sept 2025 – Dec 2025",
       tags: ["Aerospace", "Embedded Systems", "C++", "Avionics", "Rocketry"],
-      tech: ["C++", "PlatformIO", "Git"],
+      tech: ["C++", "PlatformIO", "Git", "Microcontrollers"],
       preview: "Avionics development for the Univeristy of Cincinnati's Rocketry Club's Boosted Dart",
       content: [
-        "Developed along side colleagues Loring Teuteuberg and Jesse Dominguez (Avionics Lead) to create custom code for the avionics bay utilising PlatformIO in Visual Studio Code using C++.",
+        "Developed along side colleagues Loring Teuteberg and Jesse Dominguez (Avionics Lead) to create custom code for the avionics bay utilising PlatformIO in Visual Studio Code using C++.",
         "Main responsibilities included designing the control architecture, implementing sensor filtering and logging, and developing clean code for reusability",
         "Components included the Adafruit LSM6DSO32 IMU for gyroscope data and as an accelerometer. This was then recorded in G's across all axes and angular velocity in degrees per second, to allow for the analysis of thrust, stability, and stage changes. MS5611 Barometer was used to temperature and pressure. From pressure readings, we could then calculate altitude both to sea level and to the launch site in Dayton, pinpointing apogee and descent. The ESP32 Microcontroller acted as the whole brain of the operation, running flight detection logic, managing data storage, and hosting a local server we could manage for continuity.",
         "Harty Darty was a large group effort by UCRO to create a boosted dart with Mach 1 capabilities. The goals of the avionics team was to create a fully custom avionics as well as an additional fall-back bay using the Blue Raven developed by Featherweight Altimiters. Harty Darty had a semi-sucessful launch on November 23nd with a delayed separation stage (it is important to know this is a boosted dart, so the second stage did not contain a motor and was purily thrusted by the intial thrust and drag separation). ",
@@ -64,35 +131,62 @@
         { label: "YouTube", href: "https://www.youtube.com/watch?v=EhZOaHPUpec", external: true}
       ],
       thumb: thumb1,
-      images: [ img1g, img1b, thumb1, img1c, img1d, img1f, img1h],
+      images: [ img1g, img1b, thumb1, img1c, img1d, img1f, img1h, img1a, img1j],
+      captions: [
+        "The entire Hardy Darty Team posing with the boosted dart before launch on Novemeber 23rd, 2025.",
+        "Avionics Lead, Jesse Dominguez, and Avionics Member, Loring Teuteberg, preparing the electronics bay for flight.",
+        "TL(D)R!",
+        "Booster stage after motor assembly.",
+        "Loring and Jesse setting the Avionics Bay into the dart.",
+        "Adding the threaded inserts to lock in the Avionics Bay.",
+        "Initial breadboard testing of the avionics bay.",
+        "Loring testing for continuity and flight control for the Blue Raven.",
+        "Harty Darty taking launch!"
+      ]
     },
 
     {
-      id: 2,
+      id: 3,
       title: "Level 2 Certification Rocket", 
       role: "Avionics and Structures",
       date: "Sept 2025 - Present",
       tags: ["Rocketry", "Avionics","Hardware"],
       tech: ["Fusion360", "Open Rocket"],
-      preview: "Creating my Level 2 certification rocket",
+      preview: "Creating my Level 2 certification rockets",
       content: [
-        "Under mentorship of Landry Danielson, current Level 2 Tripoli and UCRO President, I set a goal to gain my Level 2 certification to gain a deeper knowledge of high powered rocketry as well as avionics development and aerospace community alongside taking the Level 2 test for certification.",
+        "Under mentorship of Landry Danielson, Level 2 Tripoli and UCRO President, I set a goal to gain my Level 2 certification to gain a deeper knowledge of high powered rocketry as well as avionics development and aerospace community alongside taking the Level 2 test for certification primarily through a two-stage cardboard rocket.",
         "Using a 4 in diamater on a J-800 motor, the Open Rocket simulation is predicted for the rocket to achieve an apogee of 4,900ft with a max velocity of over 1,000 ft/s. The entire rocket except for the fins are made of re-enforced cardboard with a 3D printed custom avionics bay.",
-        "Currently looking to launch at the beginning of December--and have had many trials and tribulations along the way! After achieving my Jr Level 1 (now just Level 1) back in the fall of 2021, there was quite a bit I needed to re-learn about development of a new rocket with an unfamiliar matieral. Unlike my time previously working on our Harty Darty Rocket (go read it!!), my avionics bay this time was completely on my own and luckily was loaned components from the club to use. Although I have previously worked on physical impelemntation with a breadboard and understanding the fundamentals of wiring, this proved to be still a skill I want to work harder at with my lack of understanding and efficency. In addition, developing a electronics bay using Fusion 360 was entirely new and as I am sure Landry could atest, I am quite poor at. Half of the journey is learning what you don't know and this was a beautiful example of new skills that I want to improve on. This flight isn’t just a test. It’s a celebration of everything I’ve learned so far, and a launchpad for what comes next. Level 3 may be on the horizon, but right now, it’s all about the thrill of the high altitude, craziness of a launch day, and a quite a bit of adrenaline."
+        "Intial launch occured on May 2nd--and has had many trials and tribulations along the way! After achieving my Jr Level 1 (now just Level 1) back in the fall of 2021, there was quite a bit I needed to re-learn about development of a new rocket with an unfamiliar matieral. Unlike previously working on our Harty Darty Rocket or Double or Nothing, my avionics bay this time was completely on my own and luckily was loaned components from the club to use. Although I have previously worked on physical impelemntation with a breadboard and understanding the fundamentals of wiring, this proved to be still a skill I want to work harder at with my lack of understanding and efficency. In addition, developing a electronics bay using Fusion 360 was entirely new and as I am sure Landry could atest, I am quite poor at. Half of the journey is learning what you don't know and this was a beautiful example of new skills that I want to improve on. ",
+        "After 9 months, I was offically able to Launch my first L2 capable rocket, Kaze Tachinu, which is a node to Miyazaki Hayao film As the Wind Rises, about Jiro Horikoshi's development of the WW2 Japanese fighter-jets. During launch the rocket CATOed, due to the motor casing being incompatible with the J-800 motor I was running. It was a simple error of putting the incorrect motor casing alongside the motor. A big factor of this was there was a large gap, approximately 2 inches, between the top of the motor and the rest of the casing, which when pressurized and given room to expand, simply explodes instead of creating and directing the thrust we search for. Luckily, the top half off the rocket, including the electronics bay, was recovered in perfect condition. Truly was a great learning experience not only for myself, but the others at the launch site to see what a burned-through motor casing looked like!",
+        "This was an overall great learning experience from the actual development of the rocket, but lots from actual launch day as well. I truly learned the greatest life lesson of always double-checking your materials, and creating an SOP. When it comes to rocket science, you cannot play around and truly small mistake like these can cost you no matter the scale.",
+        "Moving forward, the plan is to create another L2 rocket, primarly made of carbon fiber, using the same electronics and overall setup of the carboard version. The overall consenus I have come to in regards to changing from cardboard to carbon fiber is mainly due to the reusability and future of the L2 and for further testing and development of a purley custom flight computer."
       ],
       bullets: [
         "Developing stable rockets in Open Rocket",
         "Created custom Avionics with modeling in Fusion360",
-        "Learning and working with hardware",
-        "Understanding the qualifications for a Level 2 capable rocket",
-        "Grasping a larger understanding of better saftey protocols"
+        "Using off the shelf components in a two-stage rocket",
+        "Understanding the qualifications for a Level 2 capable rockets",
+        "Grasping a larger understanding of better saftey protocols",
+        "Understanding the importance of an SOP",
       ],
-      thumb: img2c,
-      images: [img2d, img2f, img2a, img2b, img2c, img2e],
+      thumb: img2h,
+      images: [img2d, img2f, img2a, img2b, img2c, img2e, img2g, img2h, img2i, img2j],
+      captions: [
+        "OpenRocket design of the Level 2 Rocket.",
+        "Using a dual-redundant system with two stratologgers on a 3D-printed custom avionics bay.",
+        "CAD rendering of the custom avionics bay in Fusion360.",
+        "Initial testing and finished products after 3D printing.",
+        "Initial alignment of fins within the body tube.",
+        "Final CAD design of the Avionics Bay.",
+        "風立ちぬ or As the Wind Rises, sitting ready for launch!",
+        "Launch pad pictures before flight.",
+        "Unfortunate landing, with all shearpins and the upperbody tube intact.",
+        "Exploded motor casing, truly a shocking feat."
+      ]
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Portfolio Website",
       role: "Full Stack Developer",
       date: "Oct 2025 – Present",
@@ -112,11 +206,15 @@
         "Iterative refinement of testing, debugging, and polishing small details until both design and code feel seamless"
       ],
       thumb: thumb3,
-      images: [img3a]
+      images: [img3a, img3b],
+      captions: [
+        "Initial	development of this website during development and testing",
+        "Coding never stops!",
+      ]
     },
 
     {
-      id: 4,
+      id: 5,
       title: "User Interfaces",
       role: "Full Stack Developer",
       date: "Sept 2025 – December 2025",
@@ -151,29 +249,22 @@
 
       ], 
       thumb: thumb4,
-      images: [img4b, img4a, img4c, img4d, img4e, img4f, img4h, img4g, img4i, img4j]
+      images: [img4b, img4a, img4c, img4d, img4e, img4f, img4h, img4g, img4i, img4j],
+      captions: [
+        "Landing page for Chopin Chronicle.",
+        "Calendar design inside of Chopin Chronicle that takes local events around the Cincinnati Metro Area.",
+        "Landing page for the redesign of the Bearcat Landing Page.",
+        "Detailed finances section of the Bearcats Landing.",
+        "First version of Mr. Wardrobe.",
+        "Quiz for determining your colors within Mr.Wardrobe.",
+        "How to use Mr. Wardrobe.",
+        "Further look at course schedule and club events within the Bearcat Landing.",
+        "In-depth acrticle on natural alternatives to OCD.",
+        "Overall dashboard for Closing the Gap."
+      ]
     },
 
-    {
-      id: 5,
-      title: "Two Stage Avionics Flight System", 
-      role: "Avionics and PCB Design",
-      date: "January 2026 - Present",
-      tags: ["Rocketry", "Avionics","Hardware"],
-      tech: ["VSC with PlatformIO", "C++", "KiCAD"],
-      preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
-      content: [
-        "WIP! We are very early on in development check back in the coming months for more updates!!",
-      ],
-      bullets: [
-        "",
-      ],
-      links: [
-        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/TwoStageAvionicsBay", external: true },
-      ], 
-      thumb: [],
-      images: [],
-    },
+    
     
 
 
@@ -184,6 +275,27 @@
 
   // gallery state
   let galleryIndex = 0;
+
+  //enlargen images when clicked in gallery
+  let isZoomed = false;
+  let zoomSrc = null;
+  let zoomCaption = "";
+
+  //added arrows for gal images
+  function nextZoomImage() {
+    const len = selected.images.length;
+    const nextIndex = (selected.images.indexOf(zoomSrc) + 1) % len;
+    zoomSrc = selected.images[nextIndex];
+    zoomCaption = selected.captions?.[nextIndex] || "";
+  }
+
+  function prevZoomImage() {
+    const len = selected.images.length;
+    const prevIndex = (selected.images.indexOf(zoomSrc) - 1 + len) % len;
+    zoomSrc = selected.images[prevIndex];
+    zoomCaption = selected.captions?.[prevIndex] || "";
+  }
+
 
   function openProject(id) {
     expanded = id;
@@ -240,6 +352,7 @@
         <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
         <a href="/projects" on:click|preventDefault={() => navigate('/projects')}>Projects</a>
         <a href="/resume" on:click|preventDefault={() => navigate('/resume')}>Resume</a>
+        <a href="/gallery" on:click|preventDefault={() => navigate('/gallery')}>Gallery</a>
       </nav>
     </div>
     <p class="subtitle">Click a project to open a detailed view with images, links, and notes.</p>
@@ -314,9 +427,19 @@
           <div class="gallery" aria-hidden={selected.images?.length ? "false" : "true"}>
             {#if selected.images && selected.images.length > 0}
               <div class="main-image-wrap">
-                <img class="main-image" src={selected.images[galleryIndex]} alt={`${selected.title} image ${galleryIndex + 1}`} loading="lazy" />
+                <img
+                  class="main-image"
+                  src={selected.images[galleryIndex]}
+                  alt={selected.captions?.[galleryIndex] || ""}
+                  loading="lazy"
+                  on:click={() => {
+                    zoomSrc = selected.images[galleryIndex];
+                    zoomCaption = selected.captions?.[galleryIndex] || "";
+                    isZoomed = true;
+                  }}
+                  style="cursor: zoom-in;"
+                />
               </div>
-
               <div class="thumb-row">
                 {#each selected.images as img, i}
                   <button class="thumb-btn {i === galleryIndex ? 'active' : ''}" on:click={() => showImage(i)} aria-label={"Show image " + (i+1)}>
@@ -350,11 +473,36 @@
           {#if selected.embed}
             <div class="embed" innerHTML={selected.embed}></div>
           {/if}
+
         </article>
       </section>
     {/if}
   </section>
 </main>
+
+{#if isZoomed}
+  <div class="zoom-modal" on:click={() => (isZoomed = false)}>
+    <div class="zoom-content" on:click|stopPropagation>
+      
+      {#if selected.images.length > 1}
+        <button class="zoom-arrow left" on:click={() => prevZoomImage()}>
+          ◀
+        </button>
+      {/if}
+
+      <img class="zoom-img" src={zoomSrc} alt={zoomCaption} />
+
+      {#if selected.images.length > 1}
+        <button class="zoom-arrow right" on:click={() => nextZoomImage()}>
+          ▶
+        </button>
+      {/if}
+
+      <p class="zoom-caption">{zoomCaption}</p>
+    </div>
+  </div>
+{/if}
+
 
 <style>
   .header-bar {
@@ -485,4 +633,65 @@
     .gallery { width:100%; max-width:100%; min-width:0; }
     .main-image-wrap { height:220px; }
   }
+
+  .zoom-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    pointer-events: auto;
+  }
+
+  .zoom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .zoom-caption {
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .zoom-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    object-fit: contain;
+  }
+
+  .zoom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 1000000;
+  }
+
+  .zoom-arrow.left {
+    left: 20px;
+  }
+
+  .zoom-arrow.right {
+    right: 20px;
+  }
+
+  .zoom-arrow:hover {
+    background: rgba(255,255,255,0.35);
+  }
+
+
 </style>

@@ -3,12 +3,13 @@
   import img from './assets/IMG_2650.JPG';
   import img_projects from './assets/01J5XHR97RMQMVBGT32QAQ9QXZ-low-res-branded-.JPEG';
   import img_resume from './assets/IMG_4840.jpeg';
-  import img_aboutme from './assets/S1211062025075509.JPG'
+  import img_aboutme from './assets/S1211062025075509.JPG';
+  import img_mayLaunch from './assets/IMG_4773.JPG';
+  import img_JandR from './assets/IMG_4742.JPG';
 
 </script>
 
 <main class="container">
-  <!-- Header bar (unchanged) -->
   <header class="home-header">
     <div class="header-bar">
       <h1 class="title">Rania Haas</h1>
@@ -17,6 +18,7 @@
         <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
         <a href="/projects" on:click|preventDefault={() => navigate('/projects')}>Projects</a>
         <a href="/resume" on:click|preventDefault={() => navigate('/resume')}>Resume</a>
+        <a href="/gallery" on:click|preventDefault={() => navigate('/gallery')}>Gallery</a>
       </nav>
     </div>
     <p class="subtitle">Avionics, Japanese, and more in-depth parts of my professional career!</p>
@@ -25,11 +27,10 @@
       <p class="subtitle"> </p>
   </header>
 
-  <!-- Scrapbook collage inside main area -->
   <section class="scrapbook">
-    <!-- Polaroid photo -->
+    <!--Polaroids -->
     <div class="polaroid">
-      <img src={img} alt="Rania Haas" />
+      <img src={img_mayLaunch} alt="Rania Haas" />
       <p class="caption">Graduating Class of 2027 with B.S. in Computer Science and Certificate in Japanese Language and Culture from the University of Cincinnati</p>
     </div>
 
@@ -56,7 +57,6 @@
 </main>
 
 <style>
-  /* Keep your original header/nav styles */
   .header-bar {
     display: flex;
     justify-content: space-between;
@@ -93,7 +93,6 @@
     text-decoration: underline;
   }
 
-  /* Scrapbook collage */
   .scrapbook {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -101,7 +100,6 @@
     margin-top: 2rem;
   }
 
-  /* Polaroid photo */
   .polaroid {
     background: #fff;
     padding: 0.5rem;
@@ -166,13 +164,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 220px; /* reduced from 300px */
+  height: 220px; 
   overflow: hidden;
 }
 
 .scrap-item img {
   width: 100%;
-  height: 150px; /* reduced from 220px */
+  height: 150px; 
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -181,15 +179,9 @@
 .caption {
   text-align: center;
   font-family: 'Courier New', monospace;
-  font-size: 0.85rem; /* slightly smaller */
+  font-size: 0.85rem; 
   margin-top: 0.3rem;
   color: #444;
 }
-
-
-
-
-
-
 
 </style>

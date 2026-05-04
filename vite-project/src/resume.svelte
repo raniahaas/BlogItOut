@@ -31,6 +31,7 @@
         <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
         <a href="/projects" on:click|preventDefault={() => navigate('/projects')}>Projects</a>
         <a href="/resume" on:click|preventDefault={() => navigate('/resume')}>Resume</a>
+        <a href="/gallery" on:click|preventDefault={() => navigate('/gallery')}>Gallery</a>
       </nav>
     </div>
   </header>
@@ -62,7 +63,7 @@
         : 'マックドナルドコーポレート • グローバル女性技術メンティー'}
     </h3>
     <p class="date">
-      {lang === 'ENG' ? 'Feb 2025 – Present' : '2025年2月から原稿まで'}
+      {lang === 'ENG' ? 'Feb 2025 – Feb 2026' : '2025年2月から原稿まで'}
     </p>
     <ul>
       <li>{lang === 'ENG' ? "With the assignment of a Software Engineer at McDonald's, I am developing skills in professional development, career-oriented projects, tactics, real-world problems, and personal development skills" : 'マックのソフトウェア工学者と玄人の発展とか、指導とか作っていらしゃいます。'}</li>
@@ -122,7 +123,7 @@
     <ul>
       <li>{lang === 'ENG' ? 'Developed embedded C++ modules for flight control fitted for a boosted dart and dual stage rocket on a collaberative level. Created code for projects that require redundant dual deployment systems alongside experiments within the launch window' : 'フライト制御用の組込みC++モジュールを開発。'}</li>
       <li>{lang === 'ENG' ? "Selected as a mentee to develop my NAR L2 certifiable rocket under the current club's President who is in addition Level 2 Certified. Developing several skills from intial structures and development of the rocket to 3D modeling skills with Fusion360" : '航空宇宙エンジニアと安全システムで協力。'}</li>
-      <li>{lang === 'ENG' ? "Worked on development of printed circuit boards for easier integration with the custom avoinic's bay" : ""}</li>
+      <li>{lang === 'ENG' ? "Worked on development of printed circuit boards for easier integration with the custom avoinic's bay. Focused on the addition of multi-threaded code on the micro controller to decrease latency while managing staging events." : ""}</li>
     </ul>
   </div>
 

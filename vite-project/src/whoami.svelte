@@ -1,6 +1,8 @@
 <script>
   export let navigate = (p) => (location.pathname = p); // fallback if not provided
   import img from './assets/IMG_2650.JPG';
+  import img_HoN from './assets/doubleOrNothing/launch_4.11-6769.JPG';
+
   let lang = 'ENG'; // default language
 
   function toggleLang() {
@@ -26,6 +28,7 @@
         <a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
         <a href="/projects" on:click|preventDefault={() => navigate('/projects')}>Projects</a>
         <a href="/resume" on:click|preventDefault={() => navigate('/resume')}>Resume</a>
+        <a href="/gallery" on:click|preventDefault={() => navigate('/gallery')}>Gallery</a>
       </nav>
     </div>
 
@@ -35,21 +38,27 @@
         : 'シンシナティ大学 の 工学部・応用科学部 2027年卒業予定'}
     </p>
 
-    <img class="profile-wrap" src={img} alt="Rania Haas" />
+    <img class="profile-wrap" src={img_HoN} alt="Rania Haas" />
   </header>
 
   <!-- Bio -->
   <section class="bio">
     {#if lang === 'ENG'}
       <p>
-        Hiya my name is Rania Haas and I am a current Junior at the University of Cincinnati studying Computer Science with a minor in Japanese! I have a passion for aerospace engineering and software development, and I love combining these interests to create innovative solutions.
+        Hi my name is Rania Haas and I am a current Senior at the University of Cincinnati studying Computer Science with a minor in Japanese! I have a passion for aerospace engineering and software development where I can combine these interests to create innovative solutions.
       </p>
       <p>
-        Other than trying to grow as a professional, I love to read and study new languages (both programming and spoken). I'm currently honing my C++ skills and improving my Japanese after getting N4 certified in January of 2025.
+        Currently, I have been working alongside the University of Cincinnati's Rocketry club under our Avionics team to develop a custom avionics bay for our projects! Mainly, have been working with the ESP32 microcontroller in C++ for the flight computer.
+      </p>
+      <p>
+        Other than trying to grow as a professional, I love to read, sew, study planes, and study new languages (both programming and spoken). I'm currently honing my C++ skills and improving my Japanese after getting N4 certified in January of 2025 with plans for N3 in 2027.
       </p>
     {:else}
       <p>
-        ヤホ！レンヤ・ハースと申します。シンシナティ大学でコンピュータ科学を勉強し、副専攻。今年、あたしが３年生です。降雨空中とかソフトウェアとか本当に大好きです！プロジェクトを作る時、あたしの大好き物を考えてそうして革新的な解決策を作っていきます。
+        こんにちは！レンヤ・ハースと申します。シンシナティ大学でコンピュータ科学を勉強し、副専攻。今年、あたしが４年生です。降雨空中とかソフトウェアとか本当に大好きです！プロジェクトを作る時、あたしの大好き物を考えてそうして革新的な解決策を作っていきます。
+      </p>
+      <p>
+        今、シンシナティイガのロッケトサクルで、カスタムアビオニクセベイを開発します。ESP32とC++によるフライトコンピュータの実装を担当します。
       </p>
       <p>
         暇があったら、たくさん本を読めるとか、新しい言語（プログラミング言語とか話す言語とか）を勉強したりします。今、C++と日本語を勉強を続けています。２０２５の１月に日本語能力試験のN4を受けました。まだ、N3~N1を続けたいです！
@@ -63,8 +72,8 @@
     <ul>
       <li>☆ {lang === 'ENG' ? 'Rockets Rockets Rockets!' : 'ロケットだいよ！アメリカではHPR（ハイパーワーロケット）です'}</li>
       <li>☆ {lang === 'ENG' ? 'Learning the anatomy of Kanji' : '漢字の意味と会報がくを学びます'}</li>
-      <li>☆ {lang === 'ENG' ? 'Creating projects that are entertaining' : '楽しいプロジェクトを作ることです'}</li>
-      <li>☆ {lang === 'ENG' ? 'Building aerospace systems with precision' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Working with microntrollers' : '楽しいプロジェクトを作ることです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Building aerospace systems and telementary systems' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
       <li>☆ {lang === 'ENG' ? 'Reading and learning new topics' : '新しいトピックを学び、読むことです'}</li>
     </ul>
   </section>
@@ -74,7 +83,7 @@
     <h2>{lang === 'ENG' ? '౨ৎ Connect with Me!' : '౨ৎ 連絡'}</h2>
     <div class="social-icons">
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/rania-maaraba-403987290/" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/rania-haas-403987290/" target="_blank" aria-label="LinkedIn">
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.6v2.16h.05c.5-.95 1.72-1.95 3.55-1.95 3.8 0 4.5 2.5 4.5 5.75V24h-4v-7.5c0-1.8-.03-4.12-2.5-4.12-2.5 0-2.88 1.95-2.88 3.98V24h-4V8z" />
         </svg>
@@ -88,7 +97,7 @@
       </a>
 
       <!-- Email -->
-      <a href="mailto:maarabrn@mail.uc.edu" aria-label="Email">
+      <a href="mailto:haasr3@mail.uc.edu" aria-label="Email">
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" />
         </svg>

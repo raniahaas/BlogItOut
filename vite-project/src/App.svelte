@@ -4,6 +4,7 @@
   import Projects from './projects.svelte';
   import Resume from './resume.svelte';
   import Me from './whoami.svelte';
+  import Gallery from './gallery.svelte';
 
   let route = location.pathname;
 
@@ -32,8 +33,12 @@
   <Resume {navigate} />
 {:else if route === '/about'}
   <Me {navigate} />
+{:else if route === '/gallery'}
+  <Gallery {navigate} />
 {:else}
   <Home {navigate} />
 {/if}
+
+
 
 
