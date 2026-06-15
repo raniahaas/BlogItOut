@@ -57,8 +57,53 @@
   import img5h from './assets/doubleOrNothing/IMG_1726.jpg';
   import img5i from './assets/doubleOrNothing/PXL_20260411_192521324.jpg';
 
+  import thumb6 from './assets/IMG_4742.JPG';
+
 
   let projects = [
+    {
+      id: 6,
+      title: "TOBI - Custom Flight Computer", 
+      role: "Embedded Systems & Full-Stack Development",
+      date: "January 2026 - April 2026",
+      tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++", "PCB"],
+      tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers", "OpenRocket"],
+      preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
+      content: [
+        "Following up on the Fall semester's Harty Darty, Double or Nothing was born as the next natural progression for the club, becoming the first two stage rocket in both UC history as wel as the club's. Goals for the project can be simplifed into three categories: generalised, structures, and avionics. Generally, the overall goal was to stay within our given flight waiver at WSR of 10,000ft but no less than 8,000ft. Additionally, it was a heavy priority to have both stages recoverable within a mile raidus of launch. This is a good rule of thumb to begin with, but with the inner stage of Harty Darty not being recoverable for about a month, it was an even higher priority item this time. For structures, the goals was to efficienty optimize a two stage rocket, continue to build a Mach 1 capable rocket, and improve simulation techniques. For avionics, the goals encompassed ignition of a second stage as well as recovery in terms of custom components.",
+        "Similar to Harty Darty, Avionics is once again running off of a custom electronics bay as well as off the shelf compoents, both being near identical to the previous semester's project. One of the larger changes we added this semester was PCB design to decrease latency as well as set the club up with the skills accredidted to a space launch later down the line. On the PCB, we still used our ESP32-S3 microcontroller, MS5611 barometer, and LSM6DSO32 IMU. With the nature of the project, we used C++ and PlatformIO to be able to integrate and flash the information as an alternative to the ArudinoIDE. The goal was to maximise the flash memory, using about half of the volatile memory for logging and determining event sequences. Primarily, the largest being from high speed data coming from the IMU. It is important to note here that we are using customs as a development feature to later connect to pyrotechniques, given myself and the few others working on customs completely dependent code was not in the cards this semester.",
+        "Working off of the code from the previous semester, I had set out a few goals for moving forward with the project: clean up the code and create more intuitive functions, create better logging techniques for data retrival, add more staging events and faux events to replace what would be pyrotechniques. Before any of these goals could be addressed--there was a larger issue at hand. After retriving information from last semester and with simulations ran on the custom code, the setup of the microcontroller wihtout any multi-threading made it impossible to both log information from the barometer or accelerometer as well as have event logging. Often when testing, all of the values would be recorded but when the computer determined it 'landed' the functions would then go through and record the event sequence with inacurrate data points and times. To comabt this, we used freeROTS to create some multithreaded code to have one core constantly log information and the other detect and determine event sequences. This became the hardest part of our integration, which often required re-writing the entire logic for all of our functions to work with the multithreading techniques.",
+        "Not knowing the scale of multithreading and the overall complexity ended up being one of the greatest weak points of the code this semester, although the logic was there actual implementation and testing became quite difficult once we realised the scale. Before launch day, the multi-threading was sucessfully in place but we were still lacking in many features, notably only truly flying with apogee detection, launch and staging detection, and landing which was less than we had originall bargined for. However, the large learning curve that came with multi-threading ended up being quite the large step in the customs code development, setting a the club off on a good base for the next project. Considering my goals, I was able to help contribute to cleaning up the code as well as teaching more members the innerworking of the code, but still left many quetsions unaswered for the next project.",
+        "One of the most important things I can take away from this project this semester is truly planning around the unknown. Without knowing the scale of issues that came with multithreading and only two programmers working on this difficult aspect, priorites for the final demostration become a lot larger. Truly marking out in the beginning what is critical and must be done no matter the issues we run into is something I plan to use going forward with development of my own custom flight computer. Additionally, how important it is to be able to write clear and consice code for many to understand when I am long gone. I would often create headers at the top of files with dates, initials, and modifications made which helps along side git to determine who is working on which functions, why, and what modifications were changed from previous versions. I found this truly critical when integrating others code into our multi-threaded versions. On a similar note as well, how important it is to explain concepts to new coders. Being the only computer science major within the project and working on the code, the exposure of higher level programming concepts was a large gap between myself and the other aerospace majors. Creating code in a way that is very digestable and simple to understand in a coding perspective and more in a physics perspective is something I plan to focus on when writing more code.",
+        "This project truly was such a fun endevour, but also pushed me outside of my comfort zone working more hands on with the development and the embedded system aspect of the project. For our method of lighting the second stage being very experimental, seeing the whole project work sucessfully is a feeling truly unmatched. For our final stats of the first stage: Apogee of 3,539.71ft with a total time of 14.4 seconds, max velocityof 612ft/s (0.55 mach), motor burnout of 1.3 seconds at a tilt of 11.2º, main parachute deployment at 689 feet decescending at 37.6 ft/s. Overall second stage stats: apogee of 10,116.75 ft encapsulating 25.4s, max velocity of 1046.0ft/s (0.93 mach), 2.2 second delay between stages, 5.27 s second motor burn out at a tilt of 14.2º, drogue descent at 58ft/s. ",
+        "More information regarding indepth images, sketches, mathematics, and structures can be found attached to the GitHub repository. Huge shout outs to our leads this semester for truly creating and cementing their names in history, Project Manager Jesse Dominguez, Structures lead Caleb Leech, and Avionics Lead Loring Teuteberg"
+      ],
+      bullets: [
+        "Developed new multithreading techniques and usage",
+        "Used Euclidean norm for calcuating apogee",
+        "Created test cases, systems for data management, and instructions for conceptual functions",
+        "Continued work on sensor integration in real time",
+        "Developed a new real-time server with the ESP to retrieve CSV data",
+        "Learned more critical functions regarding model rocketry and integration of a custom flight computer with pyrotehcniques"
+      ],
+      links: [
+        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/DoubleOrNothing", external: true },
+      ], 
+      thumb: [thumb6],
+      images: [img5a, img5b, img5c, img5d, img5e, img5f, img5g, img5h, thumb5, img5i],
+      captions: [
+        "Full Double or Nothing team, for the spring semester, launched on April 11th, 2026.",
+        "Double or Nothing sitting on the pad, ready for flight!",
+        "Testing simulations and continuity on the Blue Raven and Blue Jay altimeter.",
+        "Avionics Lead, Loring Teuteberg, preparing the electronics bay.",
+        "Loring preparing black powder pellets to ignite the second stage motor.",
+        "Team Lead, Jesse Dominguez, and Loring creating the second stage motor, a H-130.",
+        "Posing with the rocket post flight!!",
+        "Congrats and high fives all around for making UC history! Within the Rocketry Club and campus, first Two-Stage rocket launched!",
+        "Similes all around for a sucessfully recovered second stage!",
+        "Final preparations before heading to the launch pad with sucessfully created motors."
+      ]
+    },
     {
       id: 1,
       title: "Two Stage Avionics Flight System", 

@@ -59,6 +59,20 @@
     <div class="resume-item">
     <h3>
       {lang === 'ENG'
+        ? 'TOBIRU - Custom Flight Computer Development'
+        : 'GMi会社 • 情報サービスエンジニアリングインターン'}
+    </h3>
+    <p class="date">
+      {lang === 'ENG' ? 'May 2026 – Aug 2026' : '2024年〜2025年'}
+    </p>
+    <ul>
+      <li>{lang === 'ENG' ? 'Worked in KiCAD to develop a PCB for a 38mm minimum diameter rocket.' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
+      <li>{lang === 'ENG' ? 'Collaborated with many departments across the company from Marketing to Logistics to Finance. Was able to develop over 45 quality of life and other project improvements to the system while working alongside other interns.' : '航空宇宙エンジニアと安全システムで協力。'}</li>
+    </ul>
+
+    <div class="resume-item">
+    <h3>
+      {lang === 'ENG'
         ? "McDonald's Coporate — Global Women in Technology Mentee"
         : 'マックドナルドコーポレート • グローバル女性技術メンティー'}
     </h3>
@@ -78,7 +92,7 @@
         : 'GMi会社 • 情報サービスエンジニアリングインターン'}
     </h3>
     <p class="date">
-      {lang === 'ENG' ? '2024 – 2025' : '2024年〜2025年'}
+      {lang === 'ENG' ? 'August 2024 – August 2025' : '2024年〜2025年'}
     </p>
     <ul>
       <li>{lang === 'ENG' ? 'Developed code in C/AL with Microsoft Dynamics NAV which primarily included coding projects for creating better quality of life for floor workers as well as developing and utilising Microsoft Report Builder.' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
@@ -92,7 +106,7 @@
         : 'Web開発 — Svelte/Tailwindを用いたレスポンシブアプリケーション'}
     </h3>
     <p class="date">
-      {lang === 'ENG' ? ' 2021 – 2023' : '2025年1月〜現在'}
+      {lang === 'ENG' ? ' July 2021 –  April 2023' : '2025年1月〜現在'}
     </p>
     <ul>
       <li>{lang === 'ENG' ? "A school-based chain that worked on K-8 coding skills by game development. Helped instruct programming learning primarlly in JavaScript to help bring a student's game idea to life." : 'ENG/日本語切替付きポートフォリオサイトを構築。'}</li>
