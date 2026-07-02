@@ -57,7 +57,17 @@
   import img5h from './assets/doubleOrNothing/IMG_1726.jpg';
   import img5i from './assets/doubleOrNothing/PXL_20260411_192521324.jpg';
 
-  import thumb6 from './assets/IMG_4742.JPG';
+  //TOBI imports
+  import thumb6 from './assets/TOBI/pcbThumb.png';
+  import img6a from './assets/TOBI/figma.png';
+  import img6b from './assets/TOBI/full_ebay.png';
+  import img6c from './assets/TOBI/IMG_4334.PNG';
+  import img6d from './assets/TOBI/IMG_4335.PNG';
+  import img6e from './assets/TOBI/KicadFront.png';
+  import img6f from './assets/TOBI/lipo_ebay.png';
+  import img6g from './assets/TOBI/openRocket.png';
+  import img6h from './assets/TOBI/pcb_ebay.png';
+  import img6i from './assets/TOBI/TOBI_schematics.pdf';
 
 
   let projects = [
@@ -65,13 +75,13 @@
       id: 6,
       title: "TOBI - Custom Flight Computer", 
       role: "Embedded Systems & Full-Stack Development",
-      date: "January 2026 - April 2026",
+      date: "May 2026 - Present",
       tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++", "PCB"],
       tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers", "OpenRocket"],
       preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
       content: [
-        "Following up on the Fall semester's Harty Darty, Double or Nothing was born as the next natural progression for the club, becoming the first two stage rocket in both UC history as wel as the club's. Goals for the project can be simplifed into three categories: generalised, structures, and avionics. Generally, the overall goal was to stay within our given flight waiver at WSR of 10,000ft but no less than 8,000ft. Additionally, it was a heavy priority to have both stages recoverable within a mile raidus of launch. This is a good rule of thumb to begin with, but with the inner stage of Harty Darty not being recoverable for about a month, it was an even higher priority item this time. For structures, the goals was to efficienty optimize a two stage rocket, continue to build a Mach 1 capable rocket, and improve simulation techniques. For avionics, the goals encompassed ignition of a second stage as well as recovery in terms of custom components.",
-        "Similar to Harty Darty, Avionics is once again running off of a custom electronics bay as well as off the shelf compoents, both being near identical to the previous semester's project. One of the larger changes we added this semester was PCB design to decrease latency as well as set the club up with the skills accredidted to a space launch later down the line. On the PCB, we still used our ESP32-S3 microcontroller, MS5611 barometer, and LSM6DSO32 IMU. With the nature of the project, we used C++ and PlatformIO to be able to integrate and flash the information as an alternative to the ArudinoIDE. The goal was to maximise the flash memory, using about half of the volatile memory for logging and determining event sequences. Primarily, the largest being from high speed data coming from the IMU. It is important to note here that we are using customs as a development feature to later connect to pyrotechniques, given myself and the few others working on customs completely dependent code was not in the cards this semester.",
+        "Learning from Harty Darty and Double or Nothing, as a method of learning more about avionics and embedded systems, I created TOBI which allowed me to work on every aspect of the project from scratch and entirely on my own. Although I did use similar components optimized for the immense G forces when the rocket is launch, all designs, PCBs, and code was entirely created from scratch by myself. TOBI, Telemetary Orientation and Barometric Instrument (Flight Computer), is also an extension of the Japanese word 飛びる(tobiru) meaning to soar. This is ultimately the backbone for further projects with UCRC and our fall project in Kanas as well as my capstone project to later compete in IREC in Texas, 2027.",
+        "Components are entirely similar, using the Seeed ESP32-S3 as a microcontroller, MS561101 for the barometer, and the Adafruit LSM6DSO32. The electronics bay and PCB are optimised for a 2 inch diameter with the LiPo batteries wired from under the PCB. There is additional space as seen in the overal e-bay render where you could test a COTS system to compare and ensure parachute deployment and or additional payload for testing. All code was developed in C++ and HTML using PlatformIO. ",
         "Working off of the code from the previous semester, I had set out a few goals for moving forward with the project: clean up the code and create more intuitive functions, create better logging techniques for data retrival, add more staging events and faux events to replace what would be pyrotechniques. Before any of these goals could be addressed--there was a larger issue at hand. After retriving information from last semester and with simulations ran on the custom code, the setup of the microcontroller wihtout any multi-threading made it impossible to both log information from the barometer or accelerometer as well as have event logging. Often when testing, all of the values would be recorded but when the computer determined it 'landed' the functions would then go through and record the event sequence with inacurrate data points and times. To comabt this, we used freeROTS to create some multithreaded code to have one core constantly log information and the other detect and determine event sequences. This became the hardest part of our integration, which often required re-writing the entire logic for all of our functions to work with the multithreading techniques.",
         "Not knowing the scale of multithreading and the overall complexity ended up being one of the greatest weak points of the code this semester, although the logic was there actual implementation and testing became quite difficult once we realised the scale. Before launch day, the multi-threading was sucessfully in place but we were still lacking in many features, notably only truly flying with apogee detection, launch and staging detection, and landing which was less than we had originall bargined for. However, the large learning curve that came with multi-threading ended up being quite the large step in the customs code development, setting a the club off on a good base for the next project. Considering my goals, I was able to help contribute to cleaning up the code as well as teaching more members the innerworking of the code, but still left many quetsions unaswered for the next project.",
         "One of the most important things I can take away from this project this semester is truly planning around the unknown. Without knowing the scale of issues that came with multithreading and only two programmers working on this difficult aspect, priorites for the final demostration become a lot larger. Truly marking out in the beginning what is critical and must be done no matter the issues we run into is something I plan to use going forward with development of my own custom flight computer. Additionally, how important it is to be able to write clear and consice code for many to understand when I am long gone. I would often create headers at the top of files with dates, initials, and modifications made which helps along side git to determine who is working on which functions, why, and what modifications were changed from previous versions. I found this truly critical when integrating others code into our multi-threaded versions. On a similar note as well, how important it is to explain concepts to new coders. Being the only computer science major within the project and working on the code, the exposure of higher level programming concepts was a large gap between myself and the other aerospace majors. Creating code in a way that is very digestable and simple to understand in a coding perspective and more in a physics perspective is something I plan to focus on when writing more code.",
@@ -87,21 +97,20 @@
         "Learned more critical functions regarding model rocketry and integration of a custom flight computer with pyrotehcniques"
       ],
       links: [
-        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/DoubleOrNothing", external: true },
+        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/TOBI", external: true },
       ], 
       thumb: [thumb6],
-      images: [img5a, img5b, img5c, img5d, img5e, img5f, img5g, img5h, thumb5, img5i],
+      images: [img6a, img6b, img6c, img6d, img6e, img6f, img6g, img6h, thumb6, img6i],
       captions: [
-        "Full Double or Nothing team, for the spring semester, launched on April 11th, 2026.",
-        "Double or Nothing sitting on the pad, ready for flight!",
-        "Testing simulations and continuity on the Blue Raven and Blue Jay altimeter.",
-        "Avionics Lead, Loring Teuteberg, preparing the electronics bay.",
-        "Loring preparing black powder pellets to ignite the second stage motor.",
-        "Team Lead, Jesse Dominguez, and Loring creating the second stage motor, a H-130.",
-        "Posing with the rocket post flight!!",
-        "Congrats and high fives all around for making UC history! Within the Rocketry Club and campus, first Two-Stage rocket launched!",
-        "Similes all around for a sucessfully recovered second stage!",
-        "Final preparations before heading to the launch pad with sucessfully created motors."
+        "Full Figma sketch of front end UI desing for the active reading and CSV download.",
+        "Full 3D printed ebay design in Fusion360.",
+        "ESP32S3 successfully creating local host and connection with user.",
+        "Front end UI of the start up screen for user, recording live data. ",
+        "Top model of the PCB in KiCAD.",
+        "Closer view of the middle part of the ebay, section created for two LiPo batteries.",
+        "OpenRocket model of the Wildman Darkstart Jr, the rocket to be used to test the flight computer. PCB is inherently modeled for the ebay with a diameter of 2” rather than the typical 38 mm min diameter. ",
+        "Another view focusing more on the PCB sitting at the top of the ebay, location was picked to easily allow quick access to arm or disarm the device.",
+        "PCB final design render from JLC PCB."
       ]
     },
     {
@@ -612,7 +621,7 @@
   }
   .project-row:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
 
-  .thumb { width: 72px; height: 72px; object-fit: cover; border-radius: 6px; flex: 0 0 72px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .thumb { width: 100px; height: 100px; object-fit: cover; border-radius: 6px; flex: 0 0 72px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
   .thumb.placeholder { background: linear-gradient(135deg,#eee,#f7f7f7); }
 
   .meta { display:flex; flex-direction:column; min-width:0; }
