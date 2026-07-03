@@ -66,8 +66,8 @@
       {lang === 'ENG' ? 'May 2026 – Aug 2026' : '2024年〜2025年'}
     </p>
     <ul>
-      <li>{lang === 'ENG' ? 'Worked in KiCAD to develop a PCB for a 38mm minimum diameter rocket.' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
-      <li>{lang === 'ENG' ? 'Collaborated with many departments across the company from Marketing to Logistics to Finance. Was able to develop over 45 quality of life and other project improvements to the system while working alongside other interns.' : '航空宇宙エンジニアと安全システムで協力。'}</li>
+      <li>{lang === 'ENG' ? 'Refined the design using a custom PCB created in KiCAD as well as a custom 3D printed electronics bay for flight' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
+      <li>{lang === 'ENG' ? 'Designed and developed a custom flight computer using an Seeed ESP32-S3 and Adafruit LSM6DSO32 to monitor live data, prepare system for flight, log and record events, and allow the user to download and access system data through a front-end server in C++' : '航空宇宙エンジニアと安全システムで協力。'}</li>
     </ul>
 
     <div class="resume-item">
@@ -258,8 +258,8 @@
   <section class="resume-section">
     <h2>{lang === 'ENG' ? 'Skills' : 'スキル'}</h2>
     <ul>
-      <li>{lang === 'ENG' ? 'Languages: C++, Python, JavaScript, SQL, LabVIEW' : '言語: C++, Python, JavaScript, 日本語（JLPT N4）'}</li>
-      <li>{lang === 'ENG' ? 'Software: DynamicsNAV, Fusion360, Arduuino, Pandas, Numpy' : 'フレームワーク: Svelte, TailwindCSS'}</li>
+      <li>{lang === 'ENG' ? 'Languages: C++, HTML, Python, JavaScript, SQL, LabVIEW' : '言語: C++, Python, JavaScript, 日本語（JLPT N4）'}</li>
+      <li>{lang === 'ENG' ? 'Software: DynamicsNAV, Fusion360, Arduino, PlatformIO, KiCAD' : 'フレームワーク: Svelte, TailwindCSS'}</li>
       <li>{lang === 'ENG' ? 'Focus: Aerospace avionics systems, UI design, embedded software' : '専門分野: 航空宇宙システム、UIデザイン、組込みソフトウェア'}</li>
     </ul>
   </section>
