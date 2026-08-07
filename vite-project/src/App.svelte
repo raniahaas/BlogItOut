@@ -6,10 +6,20 @@
   import Me from './whoami.svelte';
   import Gallery from './gallery.svelte';
 
-  let route = location.pathname;
+  const base = import.meta.env.BASE_URL;
+
+  function getRoute() {
+    let path = location.pathname;
+    if (path.startsWith(base)) {
+      path = path.slice(base.length - 1); // keep leading slash
+    }
+    return path || '/';
+  }
+
+  let route = getRoute();
 
   function navigate(path) {
-    history.pushState({}, '', path);
+    history.pushState({}, '', base.slice(0,-1) + path);
     route = path;
   }
 

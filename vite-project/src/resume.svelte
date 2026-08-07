@@ -5,6 +5,8 @@
   function toggleLang() {
     lang = lang === 'ENG' ? 'JP' : 'ENG';
   }
+
+  const pdfUrl = `${import.meta.env.BASE_URL}Haas_Rania_Resume_2026.pdf`;
 </script>
 
 <main class="container">
@@ -16,7 +18,7 @@
       </button>
     </div>
     <div class="resume-download">
-      <a href="public/Haas_Rania_Resume_2026_Feb.pdf" download>
+      <a href={pdfUrl} target="_blank">
         {lang === 'ENG' ? '↓ Download Most Recent Resume' : '↓ 履歴書をダウンロード'}
       </a>
     </div>

@@ -67,7 +67,11 @@
   import img6f from './assets/TOBI/lipo_ebay.png';
   import img6g from './assets/TOBI/openRocket.png';
   import img6h from './assets/TOBI/pcb_ebay.png';
-  import img6i from './assets/TOBI/TOBI_schematics.pdf';
+  import img6i from './assets/TOBI/Untitled design.png';
+  import img6j from './assets/TOBI/IMG_4473.jpeg';
+
+  import img6l from './assets/TOBI/IMG_4491.jpeg'
+  import img6m from './assets/TOBI/IMG_4394.PNG';
 
 
   let projects = [
@@ -78,13 +82,17 @@
       date: "May 2026 - Present",
       tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++", "PCB"],
       tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers", "OpenRocket"],
-      preview: "University of Cincinnati's first two stage rocket Custom Avionics Bay",
+      preview: "A custom flight computer completed through the University of Cincinnati",
       content: [
         "Learning from Harty Darty and Double or Nothing, as a method of learning more about avionics and embedded systems, I created TOBI which allowed me to work on every aspect of the project from scratch and entirely on my own. Although I did use similar components optimized for the immense G forces when the rocket is launch, all designs, PCBs, and code was entirely created from scratch by myself. TOBI, Telemetary Orientation and Barometric Instrument (Flight Computer), is also an extension of the Japanese word 飛びる(tobiru) meaning to soar. This is ultimately the backbone for further projects with UCRC and our fall project in Kanas as well as my capstone project to later compete in IREC in Texas, 2027.",
         "Components are entirely similar, using the Seeed ESP32-S3 as a microcontroller, MS561101 for the barometer, and the Adafruit LSM6DSO32. The electronics bay and PCB are optimised for a 2 inch diameter with the LiPo batteries wired from under the PCB. There is additional space as seen in the overal e-bay render where you could test a COTS system to compare and ensure parachute deployment and or additional payload for testing. All code was developed in C++ and HTML using PlatformIO and FreeRTOS. ",
         "My goals this semester overall was: learn more about embedded systems, work on multi-threaded code, and create a good base project for further more specific version of TOBI. To begin with, embedded systems. Fully creating a project from scratch allows you to learn the nitty gritty of embedded systems, from the actual design of the boards and the new nuiances that come with hardware creation, as well as the board itself, but also understands how hardware works with software. You can only do so much in theory until it is fully in practice. I learned a lot about not only how each of the components work together through each port and channel, but how different it is to debug and test with a physical system rather than just through code. Actaully being able to test with SDA and SCL as well as sending high and lows rather than 1s and 0s was a large change that I thoroughly have enjoyed. Additionally, I did get to see first hand the sensors and how they actually work together, even with me using the same components from previous projects, reading and doing my own research on why speicifically these components are better over other barometers or accelerometers. ",
         "Moreover, multithreading code. Previously, all of my experience outside of working on DON was Linux using POSIX threads rather than on the microcontroller I had used FreeRTOS. When figuring out the best way to work on telemetery data with multiple sensors (also just for future developments) this is one of the more critical feats that I wanted to focus on. Only with two cores however, this proved a little bit easier but being able to manually schedule and set priorites to ensure we always have sensor data being read and written without complications is always a key feat that I was able to accomplish. As I continue through this project past this semester, this will continue to prove to be a key concept to work on when I start working with pyrotechniques as at the end of the day a rocket landing safely is the number one priority.",
-        "At last, I wanted to be able to create a project that is easily sharebale, understood, and is set up to teach others who are new to avionics how the system works. From a software side, this is pretty easy to accomplish with some understanding of C++, FreeRTOS, and a generalised understanding of avionics/telemetary data. Unit tests help additionally for users to understand from a base level how functions like realative, events, and parachute deployments occur."
+        "Additionally, I wanted to be able to create a project that is easily sharebale, understood, and is set up to teach others who are new to avionics how the system works. From a software side, this is pretty easy to accomplish with some understanding of C++, FreeRTOS, and a generalised understanding of avionics/telemetary data. Unit tests help additionally for users to understand from a base level how functions like realative, events, and parachute deployments occur.",
+        "TOBI will continue development into the following years and take her first flight in Decemeber of 2026 at KLOUDBusters. There are still many improvements to be made, mainly with the PCB board itself using the correct measurement for the Adafruit LSM6DSO32 as well as continuing to add more unique event logging and pyrotechnique compatibility. TOBI will also be used as a base as a SRAD flight computer in compliance with the IREC 2027 competition requirements. ",
+        "There are three main states that TOBI allows the user to interact with, a startup mode (which is more often than not too fast for the user to see), a ready/armed status, as well as a post flight. The user once connect to the device will enter either into the ready or startup status depending on the completion of reading elements in the ESP32S3. Once in the ready state, the user can choose to press the 'ready for flight' button and start data logging. It is critical here not to press this too early as you may run out of storage on the device if reading begins too early. It is reccomended once the rocket is headed out to the launch pad and is on the rails to arm the device for flight. Total elapsed time is about 15 minutes before storage runs out on the device (10Hz for the IMU). Once landed, the device will create an average thrust curve graph for the user, continue reading live elements, as well as allow the user to view summaries and download CSV files containing all points and events.",
+        "All of the events that are begging logged like apogee and landing detection were unti testing using Unity, a locally embedded package with PlatformIO(not Unity as in the game engine). Several test cases with edge cases were tested to ensure all the logic is accurate before starting any work with pyrotechniques. This also helps to give great security when learning how to switch from an entirely software coding experience to a mixed hardware-software relationship. ",
+        "I want to thank all of those who have helped support and aide me in the process of this project, namely Andew Pipo whom I worked closely under as a mentee to develop the PCB used for TOBI. With minimal experince designing PCBs and fully understanding the hardware-software relationship, Andrew greatly helped me understand my gaps in knowledge as well as steer me down a path that allowed me to complete the design of TOBI. "
       ],
       bullets: [
         "Implemented further multithreading",
@@ -96,7 +104,7 @@
         { label: "Current GitHub Repo", href: "https://github.com/raniahaas/TOBI", external: true },
       ], 
       thumb: [thumb6],
-      images: [img6a, img6b, img6c, img6d, img6e, img6f, img6g, img6h, thumb6, img6i],
+      images: [img6a, img6b, img6c, img6d, img6e, img6f, img6g, img6h, thumb6, img6i, img6j, img6l, img6m],
       captions: [
         "Full Figma sketch of front end UI desing for the active reading and CSV download.",
         "Full 3D printed ebay design in Fusion360.",
@@ -106,7 +114,11 @@
         "Closer view of the middle part of the ebay, section created for two LiPo batteries.",
         "OpenRocket model of the Wildman Darkstart Jr, the rocket to be used to test the flight computer. PCB is inherently modeled for the ebay with a diameter of 2” rather than the typical 38 mm min diameter. ",
         "Another view focusing more on the PCB sitting at the top of the ebay, location was picked to easily allow quick access to arm or disarm the device.",
-        "PCB final design render from JLC PCB."
+        "PCB final design render from JLC PCB.",
+        "TOBI logo, the handwritten kanji for 飛び(to soar) alongside the English title.",
+        "Final front overview of the soldered PCB board.",
+        "Final back overview of the soldered PCB board.",
+        "TOBI's ready state, allowing the user to trigger an armed status to start logging instrument data and record events."
       ]
     },
     {

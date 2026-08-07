@@ -70,10 +70,10 @@
   <section class="details">
     <h2>{lang === 'ENG' ? '♡ What I Love' : '♡ 好きなこと'}</h2>
     <ul>
-      <li>☆ {lang === 'ENG' ? 'Rockets Rockets Rockets!' : 'ロケットだいよ！アメリカではHPR（ハイパーワーロケット）です'}</li>
+      <li>☆ {lang === 'ENG' ? 'Rockets, Rockets, Rockets!' : 'ロケットだいよ！アメリカではHPR（ハイパーワーロケット）です'}</li>
       <li>☆ {lang === 'ENG' ? 'Learning the anatomy of Kanji' : '漢字の意味と会報がくを学びます'}</li>
-      <li>☆ {lang === 'ENG' ? 'Working with microntrollers' : '楽しいプロジェクトを作ることです'}</li>
-      <li>☆ {lang === 'ENG' ? 'Building aerospace systems and telementary systems' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Working with microcontrollers' : '楽しいプロジェクトを作ることです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Developing avionics systems' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
       <li>☆ {lang === 'ENG' ? 'Reading and learning new topics' : '新しいトピックを学び、読むことです'}</li>
     </ul>
   </section>
