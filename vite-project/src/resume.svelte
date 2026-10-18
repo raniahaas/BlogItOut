@@ -57,6 +57,34 @@
 
   <section class="resume-section">
   <h2>{lang === 'ENG' ? 'Experience' : '仕事の経験'}</h2>
+    <div class="resume-item">
+    <h3>
+      {lang === 'ENG'
+        ? 'Senior Capstone - IREC '
+        : 'GMi会社 • 情報サービスエンジニアリングインターン'}
+    </h3>
+    <p class="date">
+      {lang === 'ENG' ? 'Aug 2026 – Present' : '2024年〜2025年'}
+    </p>
+    <ul>
+      <li>{lang === 'ENG' ? 'Leading electronic development of a smat-rocket structural-health monitoring payload build on a PCB around NUCLEO STM32F303, with integrations for Adafriuit LSM6DSO32 IMU, ADS122C04 strain-gagues, MS5611 barometer, and temperature/pressure sensors for in-flight data aquisition' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
+      <li>{lang === 'ENG' ? 'Implementing a LoRa telemtry system using two RFM95Ws at 915 Mhz to stream real-time strucutral, video, and flight data to a custom grounds station with an ESP32S3 to match the payload' : '航空宇宙エンジニアと安全システムで協力。'}</li>
+    </ul>
+
+    <div class="resume-item">
+    <h3>
+      {lang === 'ENG'
+        ? 'UCRO - 30,000 ft HPR Avionics Software Lead'
+        : 'GMi会社 • 情報サービスエンジニアリングインターン'}
+    </h3>
+    <p class="date">
+      {lang === 'ENG' ? 'May 2026 – Present' : '2024年〜2025年'}
+    </p>
+    <ul>
+      <li>{lang === 'ENG' ? 'Lead the design and development of the custom flgith computer based off of TOBI for a two-stage HPR rocket, including additions to pyro-deployment logic, sensor integration, and fault-tolerant firmware' : 'マイクロソフト•ダイナミックス•ナブでC/ALコードを蓄えし、'}</li>
+      <li>{lang === 'ENG' ? 'Mentored members in C/C++, embedded system fundamentals, avionics saftey, and debugging workflows while establishing a pipeline for further programming development and education.' : '航空宇宙エンジニアと安全システムで協力。'}</li>
+    </ul>
+
 
     <div class="resume-item">
     <h3>

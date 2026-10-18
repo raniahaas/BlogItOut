@@ -45,10 +45,13 @@
   <section class="bio">
     {#if lang === 'ENG'}
       <p>
-        Hi my name is Rania Haas and I am a current Senior at the University of Cincinnati studying Computer Science with a minor in Japanese! I have a passion for aerospace engineering and software development where I can combine these interests to create innovative solutions.
+        Hi my name is Rania Haas and I am a current Senior at the University of Cincinnati studying Computer Science with a minor in Japanese! I am currently seeking any Embedded or Avionics related positions to further advance my career! I have a passion for aerospace engineering and software development where I can combine these interests to create innovative solutions.
       </p>
       <p>
-        Currently, I have been working alongside the University of Cincinnati's Rocketry club under our Avionics team to develop a custom avionics bay for our projects! Mainly, have been working with the ESP32 microcontroller in C++ for the flight computer.
+        Currently, I have been working alongside the University of Cincinnati's Rocketry club as our Custom Avionics Software Lead to integrate my custom flight computer, TOBI, into the club and shape its overall use for the club's space shot.
+      </p>
+      <p>
+        Additionally, I am currently working on my senior capstone with the Bearcat Rocketry Capstone at the Unviersity of Cincinnati as Secretary and Payload Electronics Development where we are developed a payload for the 2027 IREC (International Rocketry Engineering Competiton) Competition in which we are creating a live-streamed video and health monitoring system of a rocket.
       </p>
       <p>
         Other than trying to grow as a professional, I love to read, sew, study planes, and study new languages (both programming and spoken). I'm currently honing my C++ skills and improving my Japanese after getting N4 certified in January of 2025 with plans for N3 in 2027.
@@ -73,8 +76,8 @@
       <li>☆ {lang === 'ENG' ? 'Rockets, Rockets, Rockets!' : 'ロケットだいよ！アメリカではHPR（ハイパーワーロケット）です'}</li>
       <li>☆ {lang === 'ENG' ? 'Learning the anatomy of Kanji' : '漢字の意味と会報がくを学びます'}</li>
       <li>☆ {lang === 'ENG' ? 'Working with microcontrollers' : '楽しいプロジェクトを作ることです'}</li>
-      <li>☆ {lang === 'ENG' ? 'Developing avionics systems' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
-      <li>☆ {lang === 'ENG' ? 'Reading and learning new topics' : '新しいトピックを学び、読むことです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Developing embedded avionics systems' : '安全かつ正確に航空宇宙システムを構築することです'}</li>
+      <li>☆ {lang === 'ENG' ? 'Sewing, entemology of words, and Japanese art history' : '新しいトピックを学び、読むことです'}</li>
     </ul>
   </section>
 

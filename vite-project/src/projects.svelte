@@ -73,8 +73,67 @@
   import img6l from './assets/TOBI/IMG_4491.jpeg'
   import img6m from './assets/TOBI/IMG_4394.PNG';
 
+  //Capstone imports
+  import thumb7 from './assets/irec.png';
+
+  //F26 Club imports
+  import thumb8 from './assets/kloud.png';
+
 
   let projects = [
+    {
+      id: 7,
+      title: "IREC 2027 - Payload Development", 
+      role: "Embedded Systems & Full-Stack Development",
+      date: "Aug 2026 - Present",
+      tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++", "PCB"],
+      tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers", "OpenRocket"],
+      preview: "Senior year capstone, developing a 'smart' rocket payload",
+      content: [
+        "This page is still a work in progress! Please check back later as development towards the competiton furthers.",
+      ],
+      bullets: [
+        "",
+        "",
+        "",
+        "",
+      ],
+      links: [
+        { label: "Current GitHub Repo", href: "https://github.com/raniahaas/SmartPayload", external: true },
+      ], 
+      thumb: [thumb7],
+      images: [thumb7],
+      captions: [
+        "Current IREC 2026 logo, 2027 not yet updated.",
+      ]
+    },
+    {
+      id: 8,
+      title: "30,000ft KLOUD Busters HPR Rocket", 
+      role: "Avionics Software Sublead",
+      date: "May 2026 - Present",
+      tags: ["Rocketry", "Avionics","Hardware", "Aerospace", "Embedded Systems", "C++", "Leadership"],
+      tech: ["PlatformIO", "C++", "KiCAD, Embedding systems, Microcontrollers", "OpenRocket"],
+      preview: "Final project for The University of Cincinnati's Rocketry Club, serving as Software Lead",
+      content: [
+        "This page is still a work in progress! Please check back later for more information.",
+        "This semsester, I am leading the Software team of Avionics for the club's 30,000ft high-powered rocket launch, to be launched December 12th at KLOUD Busters in Argonia, KS.",
+      ],
+      bullets: [
+        "Teaching students how to write C and C++",
+        "Developed a pipeline of development for the custom flight computer",
+        "Oversaw integration of new functions as well as experimental tests",
+        "Taught the importance of testing edge cases and creating dual-redundant code",
+      ],
+      links: [
+        { label: "Current GitHub Repo", href: "https://github.com/University-of-Cincinnati-s-Rockety-Club/Fall27TwoStage", external: true },
+      ], 
+      thumb: [thumb8],
+      images: [thumb8],
+      captions: [
+        "KLOUD Busters, in Argonia, Kanas.",
+      ]
+    },
     {
       id: 6,
       title: "TOBI - Custom Flight Computer", 

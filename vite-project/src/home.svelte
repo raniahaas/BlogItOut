@@ -1,11 +1,12 @@
 <script>
   export let navigate = (p) => (location.pathname = p);
   import img from './assets/IMG_2650.JPG';
-  import img_projects from './assets/01J5XHR97RMQMVBGT32QAQ9QXZ-low-res-branded-.JPEG';
+  import img_projects from './assets/doubleOrNothing/DSC07361.JPG';
   import img_resume from './assets/IMG_4840.jpeg';
   import img_aboutme from './assets/S1211062025075509.JPG';
   import img_mayLaunch from './assets/IMG_4773.JPG';
   import img_JandR from './assets/IMG_4742.JPG';
+  import img_DoNTeam from './assets/doubleOrNothing/DSC07626.JPG'
 
 </script>
 
@@ -41,7 +42,7 @@
       </div>
 
       <div class="scrap-item" on:click={() => navigate('/resume')}>
-        <img src={img_resume} alt="Resume" />
+        <img src={img_DoNTeam} alt="Resume" />
         <p class="caption">Resume</p>
       </div>
 
